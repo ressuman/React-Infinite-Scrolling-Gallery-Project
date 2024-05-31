@@ -51,7 +51,7 @@ export const Images = () => {
         }
       >
         <div className="image-grid" style={{ marginTop: "30px" }}>
-          {images.map((image, index) => (
+          {images?.map((image, index) => (
             <Image url={image.urls.regular} image={image} key={index} />
           ))}
         </div>
